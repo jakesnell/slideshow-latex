@@ -40,8 +40,8 @@
         [else  (build-path defaultdir name)]))
 
 ;; Default paths
-(define latex-path (make-parameter (find-executable "latex" "/usr/bin")))
-(define dvipng-path (make-parameter (find-executable "dvipng" "/usr/bin")))
+(define latex-path (make-parameter (find-executable "latex" "/Library/TeX/texbin")))
+(define dvipng-path (make-parameter (find-executable "dvipng" "/Library/TeX/texbin")))
 (define cache-path (make-parameter (find-system-path 'temp-dir)))
 
 ;; Exceptions raised
